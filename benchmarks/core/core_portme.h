@@ -38,14 +38,14 @@ Please refer to LICENSE.md for the specific license agreement that pertains to t
 	and implementation of functions thereof.
 */
 #ifndef HAS_TIME_H
-#define HAS_TIME_H 1
+#define HAS_TIME_H 0
 #endif
 /* Configuration: USE_CLOCK
 	Define to 1 if platform has the time.h header file,
 	and implementation of functions thereof.
 */
 #ifndef USE_CLOCK
-#define USE_CLOCK 0
+#define USE_CLOCK 1
 #endif
 /* Configuration: HAS_STDIO
 	Define to 1 if the platform has stdio.h.
@@ -94,7 +94,7 @@ typedef e_s32 ee_s32;
 typedef e_f32 ee_f32;
 typedef e_u8 ee_u8;
 typedef e_u32 ee_u32;
-typedef ee_iptr_t ee_ptr_int;
+typedef long int ee_ptr_int;
 typedef size_t ee_size_t;
 /* align_mem:
 	This macro is used to align an offset to point to a 32b value. It is used in the Matrix algorithm to initialize the input memory blocks.

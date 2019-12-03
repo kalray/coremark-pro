@@ -73,7 +73,8 @@ Please refer to LICENSE.md for the specific license agreement that pertains to t
 	If there are issues with the return value overflowing, increase this value.
 	*/
 #if HOST_EXAMPLE_CODE
-	#if USE_CLOCK /* for non multicore implementations, clock() function is safe to use */
+//	#if USE_CLOCK /* for non multicore implementations, clock() function is safe to use */
+#if 1
 		#include <time.h>
 		#define NSECS_PER_SEC CLOCKS_PER_SEC
 		#define EE_TIMER_TICKER_RATE 1000
